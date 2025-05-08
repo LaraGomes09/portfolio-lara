@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Projetos - Lara Kivia</title>
+  <link rel="stylesheet" href="style_wd.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Meus <span class="highlight">Projetos</span></h1>
+      <a href="index.html" class="btn">← Voltar ao Início</a>
+    </div>
+  </header>
+
+  <section class="project-area">
+    <h2>Design Gráfico</h2>
+    <div class="project-container">
+      <div class="project-card" id="card-design">
+        <h3>Portfólio Completo</h3>
+        
+        <p>Clique e acesse</p>
+        <a href="https://drive.google.com/drive/folders/16c1owKKrY6ypwJ7xSOgYDMGLmVpc5Jtw?usp=sharing" class="project-btn">Ver Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-area">
+    <h2>Social Media</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Serena</h3>
+        <img src="img/serena.png" alt="Página Serena">
+        <p>Página para app de apoio emocional.</p>
+        <a href="https://instagram.com/serenaoficial22" class="project-btn">Ver Página</a>
+      </div>
+      <div class="project-card">
+        <h3>Monte Calvário</h3>
+        <img src="img/2.png" alt="Igreja Monte Calvário">
+        <p>Página da Igreja IEMC</p>
+        <a href="https://instagram.com/montecalvario_" class="project-btn">Ver Página</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-area">
+    <h2>Web Design</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Receitas Gourmet</h3>
+        <img src="img/receitas.png" alt="Receitas Gourmet">
+        <p>Protótipo no Figma de app culinário.</p>
+        <a href="https://www.figma.com/proto/pXKqf5srZ42T3zsIT1v7Xs/Projeto-receita?node-id=1-74&t=qh39n1ypPWy5rySL-1" class="project-btn">Ver Projeto</a>
+      </div>
+      <div class="project-card">
+        <h3>Serena</h3>
+        <img src="img/seerena-logo.png" alt="App Serena">
+        <p>Design de aplicativo mobile.</p>
+        <a href="https://www.figma.com/proto/gCBl9o248nUouhwt9BcAGX/ProjetoFinalAlo?node-id=48-23&starting-point-node-id=48%3A23&t=jTG3ZXzFMSrLgyGj-1" class="project-btn">Ver Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 150 * index);
+      });
+    });
+  </script>
+</body>
+</html>
